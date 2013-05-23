@@ -1,5 +1,6 @@
 {"run_list":[
-	"rvm::system_install",
+	"yum::epel",
+	"rvm::system",
 	"git",
 	"mysql",
 	"sqlite",

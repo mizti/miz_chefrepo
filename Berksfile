@@ -1,4 +1,5 @@
 site :opscode
+cookbook 'yum'
 cookbook 'git'
 cookbook 'sqlite'
 cookbook 'mysql'
