@@ -1,0 +1,3 @@
+cookbook 'rvm', :locked_version => '0.0.4'
+cookbook 'apt', :locked_version => '1.9.2'
+cookbook 'build-essential', :locked_version => '1.4.0'

@@ -1,0 +1,11 @@
+{"run_list":[
+	"rvm::system_install",
+	"git",
+	"mysql",
+	"sqlite",
+	"application",
+	"apache2",
+	"passenger_apache2",
+	"runit",
+	"unicorn"
+]}
