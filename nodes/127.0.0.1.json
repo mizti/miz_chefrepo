@@ -1,12 +1,3 @@
 {"run_list":[
-	"yum::epel",
-	"rvm::system",
-	"git",
-	"mysql",
-	"sqlite",
-	"application",
-	"apache2",
-	"passenger_apache2",
-	"runit",
-	"unicorn"
+  "role[development]"
 ]}

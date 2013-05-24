@@ -1,0 +1,22 @@
+{
+  "name": "development",
+  "description": "miz's development server",
+  "json_class": "Chef::Role",
+  "default_attributes": {
+  },
+  "override_attributes": {
+  },
+  "chef_type": "role",
+  "run_list": [
+     "yum::epel",
+     "rvm::system",
+     "git",
+     "mysql",
+     "sqlite",
+     "application",
+     "apache2",
+     "passenger_apache2",
+     "runit",
+     "unicorn"
+  ]
+}
