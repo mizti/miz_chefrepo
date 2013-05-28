@@ -17,8 +17,6 @@
      "apache2",
      "passenger_apache2",
      "runit",
-     "unicorn",
-     "zsh",
-     "miz_user"
+     "unicorn"
   ]
 }

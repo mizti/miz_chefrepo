@@ -1,0 +1,14 @@
+{
+  "name": "base",
+  "description": "base settings of miz's servers",
+  "json_class": "Chef::Role",
+  "default_attributes": {
+  },
+  "override_attributes": {
+  },
+  "chef_type": "role",
+  "run_list": [
+     "zsh",
+     "miz_user"
+  ]
+}
