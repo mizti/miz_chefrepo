@@ -13,6 +13,7 @@
      "git",
      "mysql",
      "sqlite",
+     "postgresql",
      "application",
      "apache2",
      "passenger_apache2",
