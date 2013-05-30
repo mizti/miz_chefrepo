@@ -1,2 +1,5 @@
 cookbooks/*
 !cookbooks/.gitkeep
+site-cookbooks/*\_user
+!site-cookbooks/miz_user
+nodes/153*

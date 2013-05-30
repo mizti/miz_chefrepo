@@ -25,6 +25,12 @@ group "wheel" do
      action [:create,:manage]
 end
 
+group "rvm" do
+     append true
+     members "miz"
+     action [:create,:manage]
+end
+
 home_dir = "/home/miz"
 ssh_dir = home_dir + "/.ssh"
 authorized_keys_file = ssh_dir + "/authorized_keys"
