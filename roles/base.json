@@ -3,7 +3,7 @@
   "description": "base settings of miz's servers",
   "json_class": "Chef::Role",
   "default_attributes": {
-    "openssh": { "permit_root_login": "no" },
+    "openssh": { "permit_root_login": "yes" },
     "authorization": {
       "sudo": {
         "sudoers_defaults": 
