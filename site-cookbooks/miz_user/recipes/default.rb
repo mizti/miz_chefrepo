@@ -10,10 +10,6 @@
 keyfilename="authorized_keys"
 
 user "miz" do
-     action :remove
-end
-
-user "miz" do
      home "/home/miz"
      shell "/bin/zsh"
      action [:create, :manage]
