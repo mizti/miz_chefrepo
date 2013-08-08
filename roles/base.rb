@@ -1,13 +1,18 @@
-{
-  "name": "base",
-  "description": "base settings of miz's servers",
-  "json_class": "Chef::Role",
-  "default_attributes": {
-    "openssh": { "permit_root_login": "yes" },
-    "authorization": {
-      "sudo": {
-        "sudoers_defaults": 
-          [
+name "base"
+description "base settings of miz's servers"
+run_list "sudo",
+         "zsh",
+         "openssh",
+         "miz_user",
+         "ntsurumi_user"
+
+default_attributes "openssh" => { "permit_root_login" => [ "yes" ] }
+
+default_attributes(
+  "authorization" => {
+    "sudo" => {
+      "groups" => ["root","wheel"],
+      "sudoers_defaults" => [
             "!visiblepw",
             "env_reset",
             "env_keep =  \"COLORS DISPLAY HOSTNAME HISTSIZE INPUTRC KDEDIR LS_COLORS\"",
@@ -18,19 +23,8 @@
             "env_keep += \"HOME\"",
             "always_set_home",
             "secure_path = /sbin:/bin:/usr/sbin:/usr/bin"
-          ],
-        "groups" : ["root", "wheel"]
-      }
+      ],
+      "passwordless" => false
     }
-  },
-
-  "override_attributes": {
-  },
-  "chef_type": "role",
-  "run_list": [
-     "sudo",
-     "zsh",
-     "openssh",
-     "miz_user"
-  ]
-}
+  }
+)
