@@ -15,26 +15,14 @@ run_list "yum::epel",
 
 override_attributes(
   "rbenv" => {
-    "rubies" => ["1.9.3-p448"],
+    "rubies" => ["1.9.3-p484"],
     "user_installs" => [
       {
         "user"  => "miz",
-        "rubies" => ["1.9.3-p448"],
-        "global" => "1.9.3-p448",
+        "rubies" => ["1.9.3-p484"],
+        "global" => "1.9.3-p484",
         "gems" => {
-          "1.9.3-p448" => [
-            {
-              "name" => "bundle"
-            }
-          ]
-        }
-      },
-      {
-        "user"  => "ntsurumi",
-        "rubies" => ["1.9.3-p448"],
-        "global" => "1.9.3-p448",
-        "gems" => {
-          "1.9.3-p448" => [
+          "1.9.3-p484" => [
             {
               "name" => "bundle"
             }
