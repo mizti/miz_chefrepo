@@ -2,5 +2,6 @@ berks-cookbooks
 !berks-cookbooks/.gitkeep
 site-cookbooks/*\_user
 !site-cookbooks/miz_user
-nodes/153*
+nodes/*
+!nodes/127.0.0.1.json
 TODO.txt
