@@ -3,7 +3,10 @@ description "base settings of miz's servers"
 run_list "sudo",
          "zsh",
          "openssh",
-         "miz_user"
+         "miz_user",
+	 "devuser_user",
+	 "root_user",
+	 "set_hosts"
 
 default_attributes "openssh" => { "permit_root_login" => [ "yes" ] }
 

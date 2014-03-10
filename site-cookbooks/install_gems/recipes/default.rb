@@ -9,13 +9,18 @@
 
 rbenv_global "1.9.3-p545"
 
-rbenv_gem "rails" do
-  rbenv_version   "1.9.3-p545"
-  version "3.2.17"
-  action          :install
+rbenv_gem "bundler" do
+  rbenv_version  "1.9.3p545"
+  action  :install
 end
 
-rbenv_gem "bundler" do
-  rbenv_version   "1.9.3-p545"
-  action          :install
+rbenv_gem "rails" do
+  rbenv_version  "1.9.3p545"
+  version "3.2.16"
+  action :install
 end
+rbenv_gem "passenger" do
+  rbenv_version  "1.9.3p545"
+  action :install
+end
+

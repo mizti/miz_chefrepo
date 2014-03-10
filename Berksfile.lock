@@ -18,6 +18,9 @@
     "postgresql": {
       "locked_version": "3.0.2"
     },
+    "database": {
+      "locked_version": "2.0.0"
+    },
     "application_ruby": {
       "locked_version": "1.1.4"
     },
@@ -60,6 +63,12 @@
     },
     "apt": {
       "locked_version": "2.0.0"
+    },
+    "aws": {
+      "locked_version": "2.1.0"
+    },
+    "xfs": {
+      "locked_version": "1.1.0"
     },
     "application": {
       "locked_version": "2.0.4"

@@ -1,0 +1,7 @@
+127.0.0.1   localhost localhost.localdomain localhost4 localhost4.localdomain4
+::1         localhost localhost.localdomain localhost6 localhost6.localdomain6
+180.37.183.0 qa01idp.example.com
+180.37.182.161 qa02idp.example.com
+180.37.183.151 qa01comgi.example.com
+180.37.181.237 qa02comgi.example.com
+180.42.47.114 b-portal-dev.ntt.com

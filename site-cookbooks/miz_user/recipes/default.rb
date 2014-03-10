@@ -11,8 +11,9 @@ keyfilename="authorized_keys"
 
 user "miz" do
      home "/home/miz"
-     shell "/bin/zsh"
+     shell "/bin/bash"
      action [:create, :manage]
+     password "$1$eJ7r3MuA$YBH1KE0P4yqyBsECvDQNJ0"
 end
 
 group "wheel" do
